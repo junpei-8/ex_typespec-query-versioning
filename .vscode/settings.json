@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+
+  "explorer.sortOrderLexicographicOptions": "unicode",
+
+  "typespec.tsp-server.path": "${workspaceFolder}/node_modules/@typespec/compiler",
+  "[typespec]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "typespec.typespec-vscode",
+  },
+  "cSpell.words": [
+    "typegen"
+  ],
+}

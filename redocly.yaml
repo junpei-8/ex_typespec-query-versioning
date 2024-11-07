@@ -1,0 +1,9 @@
+apis:
+  example@v1:
+    root: ./dist/@typespec/openapi3/openapi.v1.yaml
+    x-openapi-ts:
+      output: ./dist/openapi-typescript/example-api-v1.d.ts
+  example@v2:
+    root: ./dist/@typespec/openapi3/openapi.v2.yaml
+    x-openapi-ts:
+      output: ./dist/openapi-typescript/example-api-v2.d.ts

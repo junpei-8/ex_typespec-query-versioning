@@ -1,0 +1,22 @@
+{
+  "name": "ex_typespec-query-versioning",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "format": "tsp format ./src",
+    "compile": "$npm_execpath run compile:openapi && $npm_execpath run compile:openapi-typescript",
+    "compile:openapi": "rimraf ./dist/@typespec && tsp compile ./src",
+    "compile:openapi-typescript": "rimraf ./dist/openapi-typescript && openapi-typescript"
+  },
+  "dependencies": {
+    "@typespec/compiler": "^0.62.0",
+    "@typespec/http": "^0.62.0",
+    "@typespec/openapi3": "^0.62.0",
+    "@typespec/rest": "^0.62.0",
+    "@typespec/versioning": "^0.62.0",
+    "openapi-typescript": "^7.4.2"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
